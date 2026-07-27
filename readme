@@ -19,10 +19,7 @@
 
 A **production-ready backend system** built using **Node.js & Express**, designed to handle authentication, media uploads, and structured music management.
 
-Built with a focus on:
-- scalability ⚡  
-- clean architecture 🧠  
-- real-world backend practices 🏗️  
+Built with a focus on scalability ⚡, clean architecture 🧠, and real-world backend practices 🏗️.
 
 ---
 
@@ -45,54 +42,63 @@ Node.js • Express • MongoDB • Mongoose • JWT • Multer
 
 ## 🔄 System Flow
 
-
 Client → Routes → Middleware → Controller → Database → Response
-
 
 ---
 
 ## 🔐 Authentication Flow
 
-
-Register/Login → JWT Token → Stored in Cookies → Middleware Verification → Protected APIs
-
+Register/Login → JWT Token → Stored in Cookies → Middleware → Protected Routes
 
 ---
 
 ## 📡 API Endpoints
 
-
-POST /api/auth/register
-POST /api/music/upload
-POST /api/music/album
-GET /api/music
-GET /api/music/albums
-
+POST /api/auth/register  
+POST /api/music/upload  
+POST /api/music/album  
+GET  /api/music  
+GET  /api/music/albums  
 
 ---
 
 ## ⚡ Quick Start
 
-```bash
-git clone https://github.com/ARPITPRAJAPATI/music_app_backend.git
-cd music_app_backend
-npm install
-npm run dev
-🔑 Environment Variables
-MONGO_URI=your_mongo_uri
-JWT_SECRET=your_secret_key
-PORT=3000
-🧠 Architecture Mindset
+git clone https://github.com/ARPITPRAJAPATI/music_app_backend.git  
+cd music_app_backend  
+npm install  
+npm run dev  
 
-This project follows a layered backend design:
+---
 
-Routes → handle API endpoints
-Middleware → handle auth & security
-Controllers → business logic
-Services → external integrations
-Models → database schema
+## 🔑 Environment Variables
 
-👨‍💻 Author
+MONGO_URI=your_mongo_uri  
+JWT_SECRET=your_secret_key  
+PORT=3000  
 
-<p align="center"> <b>Arpit Prajapati</b><br/> 🚀 Backend Developer | DevOps Enthusiast </p>
-<p align="center"> ⭐ Star this repo if you like it <br/> 💡 Built for learning, scaling, and real-world backend understanding </p> ```
+---
+
+## 🧠 Architecture Mindset
+
+Routes → API endpoints  
+Middleware → auth & security  
+Controllers → business logic  
+Services → external integrations  
+Models → database schema  
+
+---
+
+## 👨‍💻 Author
+
+<p align="center">
+  <b>Arpit Prajapati</b><br/>
+  🚀 Backend Developer | DevOps Enthusiast
+</p>
+
+---
+
+<p align="center">
+⭐ Star this repo if you like it <br/>
+💡 Built for learning, scaling, and real-world backend understanding
+</p>
