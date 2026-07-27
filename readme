@@ -28,9 +28,7 @@ Built with a focus on:
 
 ## ⚙️ Tech Stack
 
-
 Node.js • Express • MongoDB • Mongoose • JWT • Multer
-
 
 ---
 
@@ -94,7 +92,7 @@ Controllers → business logic
 Services → external integrations
 Models → database schema
 
-
 👨‍💻 Author
+
 <p align="center"> <b>Arpit Prajapati</b><br/> 🚀 Backend Developer | DevOps Enthusiast </p>
 <p align="center"> ⭐ Star this repo if you like it <br/> 💡 Built for learning, scaling, and real-world backend understanding </p> ```
