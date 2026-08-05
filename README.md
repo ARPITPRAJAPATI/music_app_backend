@@ -1,0 +1,148 @@
+
+<div align="center">
+
+  <h1>🎵 Music App Backend</h1>
+  
+  <p>
+    <b>⚡ A High-Performance, Scalable Backend Engine for Modern Audio Platforms</b><br/>
+    <i>Architected with Clean Code Principles • Secure Auth • Media Pipelines • Cloud Ready</i>
+  </p>
+
+  <p>
+    <a href="https://github.com/ARPITPRAJAPATI/music_app_backend/stargazers"><img src="https://img.shields.io/github/stars/ARPITPRAJAPATI/music_app_backend?style=for-the-badge&color=FFD700&logo=github" alt="Stars"/></a>
+    <a href="https://github.com/ARPITPRAJAPATI/music_app_backend/network/members"><img src="https://img.shields.io/github/forks/ARPITPRAJAPATI/music_app_backend?style=for-the-badge&color=00C853&logo=github" alt="Forks"/></a>
+    <a href="https://github.com/ARPITPRAJAPATI/music_app_backend/issues"><img src="https://img.shields.io/github/issues/ARPITPRAJAPATI/music_app_backend?style=for-the-badge&color=FF5252&logo=github" alt="Issues"/></a>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Node.js-v18+-339933?style=for-the-badge&logo=node.js&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Express.js-v4.x-000000?style=for-the-badge&logo=express&logoColor=white"/>
+    <img src="https://img.shields.io/badge/MongoDB-NoSQL-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+    <img src="https://img.shields.io/badge/JWT-Secure_Auth-FF6B6B?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Multer-File_Upload-4A90E2?style=for-the-badge"/>
+  </p>
+
+</div>
+
+---
+
+## ⚡ Overview
+
+Welcome to the **Music App Backend** — a production-grade backend service crafted specifically for digital music streaming applications. Built from the ground up using **Node.js, Express, and MongoDB**, it powers everything from **seamless audio streaming** to **artist album management** and **role-based security**.
+
+Designed with **Clean MVC Architecture**, this repo showcases modular coding standards, secure token handling, and robust file management ready to scale.
+
+---
+
+## 🔥 Key Features
+
+| Feature | Description |
+| :--- | :--- |
+| 🛡️ **JWT Security** | Cookie-based HTTP-Only authentication for maximum session safety. |
+| 👥 **RBAC Middleware** | Distinct role hierarchy distinguishing regular listeners from content **Artists**. |
+| 🎧 **Audio Media Uploads** | Multi-part stream handling using `Multer` with service-layer cloud storage integration. |
+| 💿 **Album Management** | Relational mapping between track entities, artist profiles, and full-length albums. |
+| 🧠 **Modular MVC Setup** | Clean separation of concerns (Routes ➔ Controllers ➔ Services ➔ Models). |
+
+---
+
+## 🏗️ Architecture Flow
+
+```text
+ 📱 Client Application
+       │
+       ▼  [HTTP Request]
+ 🛣️  Routes (API Endpoints)
+       │
+       ▼  [Token Check / Validation]
+ 🛡️  Middleware (JWT & RBAC)
+       │
+       ▼  [Business Logic Execution]
+ 🎮  Controllers & Services
+       │
+       ├──► ☁️  Cloud / Local Storage (Audio Tracks & Covers)
+       └──► 🍃  MongoDB Database (Metadata, Users, Albums)
+```
+
+---
+
+## 📡 API Endpoints Summary
+
+### 🔐 Authentication
+
+```http
+POST   /api/auth/register    # Register a new Listener / Artist account
+POST   /api/auth/login       # Authenticate user & issue JWT HTTP-Only cookie
+POST   /api/auth/logout      # Invalidate session & clear cookies
+```
+
+### 🎵 Music & Album Engine
+
+```http
+POST   /api/music/upload     # [Protected/Artist] Upload a single track
+POST   /api/music/album      # [Protected/Artist] Create and bind a new album
+GET    /api/music            # Fetch all public tracks / Stream query
+GET    /api/music/albums     # Retrieve all published albums
+```
+
+---
+
+## ⚙️ Quick Start Guide
+
+### 1. Prerequisites
+Ensure you have the following installed on your machine:
+* [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+* [MongoDB](https://www.mongodb.com/) (Local or MongoDB Atlas cluster)
+
+### 2. Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/ARPITPRAJAPATI/music_app_backend.git
+
+# 2. Enter project directory
+cd music_app_backend
+
+# 3. Install dependencies
+npm install
+```
+
+### 3. Environment Setup
+Create a `.env` file in the root directory:
+
+```env
+PORT=3000
+MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/music_db
+JWT_SECRET=super_secret_jwt_key_change_this_in_production
+NODE_ENV=development
+```
+
+### 4. Run the Server
+
+```bash
+# Run in development mode (with hot-reload)
+npm run dev
+
+# Run in production mode
+npm start
+```
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+  <h3><b>Arpit Prajapati</b></h3>
+  <p>🚀 <i>Backend Developer & DevOps Enthusiast</i></p>
+
+  <a href="https://github.com/ARPITPRAJAPATI"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://linkedin.com"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+
+</div>
+
+---
+
+<div align="center">
+  <sub>⭐ <b>Star this repository</b> if you found it useful or learned something new!</sub>
+</div>
